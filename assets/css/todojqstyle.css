@@ -1,0 +1,86 @@
+/* arranged according to specificity, popular choice */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* uiGradients website*/
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    background-color: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.fa-pencil-alt {
+    float: right;
+}
+
+li {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666666;
+}
+
+li:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+span {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear; /* animate trashcan sideways*/
+    opacity: 0; /* hide trash can*/
+}
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box; /* fit the input box in the container */
+    border: 3px solid rgba(0,0,0,0); /* vanish the pressed box effect and cover with border*/
+}
+
+input:focus {
+    background: #f2f2f2;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
